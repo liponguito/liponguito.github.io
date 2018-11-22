@@ -1,0 +1,178 @@
+	<!DOCTYPE html>
+<html>    
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css"/>
+		<title> Fale Conosco</title>
+		<style type="text/css">
+			#apDiv3 {
+				position: absolute;
+				left: 600px;
+				width: 500px;
+				height: 500px;
+				z-index: 10;
+			}
+					
+			#apDiv4 {
+				position: absolute;
+				left: 147px;
+				width: 482px;
+				height: 561px;
+				z-index: 13;
+			}
+			body {
+				background-color: lightgoldenrodyellow;
+				margin: 0px;
+				padding: 0px;
+			}
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+
+			.menu ul li{
+				background-color: black;
+				float: left;
+				width: 189px;
+				height: 40px;
+				display: inline-block;
+				text-align: center;
+				line-height: 40px;
+				font-size: 24px;
+				position: relative;
+			}
+			
+			.menu ul li:hover{
+				background-color: #2c69cc;
+			}
+
+			.menu ul{
+				padding: 0px;
+			}
+
+			.menu ul ul{
+				display: none;
+			}
+
+			.menu ul li:hover > ul{
+				display:block;
+			}
+
+			.menu ul ul li:hover{
+				background-color: #144aa0;
+			}
+			
+			.menu a{
+				color: white;
+				text-decoration: none;
+			}
+			}
+			.foot{
+				position:absolute;	
+				left:700px;
+			}
+			div{
+			text-align:center;
+			}
+			@media screen and (max-width: 900px) {
+				.menu ul li {
+					float: none;
+					width: 100%;
+				}
+			}
+	
+</style>
+    </head>
+    <body>
+    
+    <img src="logo.jpg" alt="Logo Ong">
+        
+		<nav class="menu">
+			<ul>
+				<li class="aqui"><a href="home.html"> Home</a></li>
+				<li><a href="Empresa.html">Quem Somos</a></li>
+				<li><a href"#">Modalidades
+					<ul>
+						<li><a href="musica.html">Música</a></li>
+						<li><a href="leitura.html">Leitura</a></li>
+						<li><a href="teatro.html"> Teatro </a></li>
+						<li><a href="desenhoartistico.html"> Desenho </a></li>
+					</ul>
+				</a>
+				</li>
+				<li><a href="doacao.html"> Doação </a></li>
+				<li><a href="parceiria.html"> Parceria </a></li>
+				<li><a href="voluntario.html">Voluntários </a></li>
+				<li><a href="noticias.html"> Notícias </a></li>
+				<li><a href="faleconosco.html"> Fale Conosco</a></li>
+			</ul>
+		</nav>
+        
+    <div>
+	<img src="fale_conosco2.png" alt="Fale Conosco">
+	</div>
+    <div id="apDiv3">
+	<fieldset>
+    <legend>Dados de Contato</legend>
+    <form id="form1" name="form1" method="post" action="">
+      <p>
+        <label for="nome2"><span class="centralizar">Nome</span></label>
+        <span class="centralizar">:</span><br />
+      <input name="nome" type="text" id="nome2" size="60" />
+      </p>
+      <p>
+        <label for="email"><span class="centralizar">E-mail</span></label>
+        <span class="centralizar">        :</span><br />
+        <input name="email" type="text" id="email" size="60" />
+      </p>
+      <p>
+        <label for="empresa2"><span class="centralizar">Empresa:</span><br />
+        </label>
+        <input name="empresa" type="text" id="empresa2" size="60" />
+        <label for="telefone"><br />
+          <br />
+        <span class="centralizar">Telefone :</span></label>
+        <br />
+        <input name="telefone" type="text" id="telefone" size="60" />
+      </p>
+      <p>
+        <label for="assunto7" class="centralizar">Assunto</label>
+        <select name="assunto" id="assunto7">
+          <option value="sel">Selecione</option>
+          <option value="sugestao" selected="selected">Sugestão</option>
+          <option value="musica">Música</option>
+          <option value="leitura">Leitura</option>
+          <option value="teatro">Teatro</option>
+          <option value="desenho">Desenho</option>
+           <option value="outros">Outros</option>
+        </select>
+      </p>
+      <p>
+        <label for="sugestao"><span class="centralizar">Mensagem :</span><br />
+          <br />
+          <textarea name="sugestao" id="sugestao" cols="45" rows="5"></textarea>
+          <br />
+        </label>
+      </p>
+      <p align="center">Como nos Encontrou?      </p>
+      <p>
+        <input type="radio" name="radio" id="buscador" value="buscador" />
+        <label for="buscador">Buscador</label>
+        <input type="radio" name="radio" id="radio" value="radio" />
+        <label for="radio">Indicação </label>
+        <input type="radio" name="radio2" id="radio2" value="radio2" />
+        <label for="radio2">Outro</label><br>
+        <input type="button" class="button" value="Enviar" />
+      </p>
+    
+    </form>
+  </fieldset>
+      
+    
+       <footer class="foot">Maranata 2018 </footer>
+      
+      
+        
+    </body>
+
+</html>
